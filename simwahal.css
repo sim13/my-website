@@ -1,0 +1,236 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Coming Soon);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+#heading {
+
+	font-family: 'Lato' , serif;
+	font-size :2.8em;
+	height :30px;
+	color : #FFF;
+	/*text-shadow : 2px 2px 5px #e74c3c;*/
+	/*-webkit-font-smoothing: antialiased;*/
+	font-weight: 100;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	right : 30px;
+	text-align:  center;
+	/*-webkit-transition: width 2s;*/
+	cursor: pointer;
+	/*text-decoration: blink;*/
+	-webkit-transition : color 0.5s ease-out;
+
+
+       }
+       #heading.animate{
+       	color :#0000FF;
+
+
+       }
+
+  /*#heading :hover{*/
+      	/*width : 500px;*/
+      /*}*/
+
+body 
+{
+margin: 0;
+/*height :100%;*/
+/*width :100%;*/
+background: url("bg_bw.jpg")50% 0;
+background-size: 100%;
+/*position: absolute;*/
+/*background-size: 1280px 800px ;*/
+opacity: 1;
+z-index: -1;
+}
+#cross{
+	height :30px;
+	width : 30px;
+
+	}
+#twitter{
+
+/*background-image:url("twit.png");*/
+/*z-index: 5;*/
+/*position:absolute;*/
+/*top:500px;*/
+/*left :0px;*/
+/*background-size: 100% 100%;*/
+height : 60px;
+width: 60px;
+
+}
+#cross.wrap{
+height :50px;
+width : 50px;
+/*background-color:white;*/
+/*background-position: 0% 0%;
+*/z-index : 12;
+position : absolute;
+top : 110px;
+right: 300px;	
+/*float : right ;*/
+cursor: pointer ;
+background-image:url(cross111.png);
+background-size: 50px 50px ;
+/*background-color: white;*/
+
+
+}
+
+#wrapper{
+position :absolute;
+top :0;
+left : 0;
+height: 100%;
+width :100%	;
+opacity: 0.6;
+z-index: 5;
+background-color: #000;
+
+
+}
+.item{
+position :relative;
+font-family: 'Lato	', sans-serif;
+font-weight: 300;
+-webkit-font-smoothing: antialiased;
+color: #FFF;
+padding : 20px;
+/*border-right: 1px solid black ;*/
+border-color : #000;
+cursor :pointer;
+display :inline-block	;
+/*font-family: Helvetica;*/
+text-align: center;
+z-index : 9;
+
+
+
+}
+.item :hover {
+ /*background-color : #FFFF62;*/
+ transition :ease-out 0.4s ;
+
+}
+
+
+
+.item a {
+	color: #FFF;
+	text-decoration: none;
+}
+#list-box {
+ max-width: 78%;
+ min-width: 75%;
+ margin : 0 auto;
+
+
+
+}
+#butt{
+	position :absolute;
+	top : 70%;
+	right: 100px;
+	z-index: 10;
+	width : 100px;
+	color : #FFF;
+	background-color : #3498db;
+	box-shadow: 0px 2px 0px 2px #1970a9;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	font-size : 18px;
+	letter-spacing: 1px;
+	padding: 15px 10px;
+	vertical-align: middle;
+	cursor : pointer;
+	border-radius: 3px;
+	transition: 0.2s ease-out;
+	/*font-color :#FFF;*/
+	/*padding: 10px;*/
+
+
+	/*background-image:url("icon111.png");*/
+
+	/*border-color: #000;*/
+
+
+}
+
+#butt:hover{
+	box-shadow: 0px 1px 0px 0px #1970a9;	
+	top : 70.2%;
+}
+
+
+#menu{
+
+
+
+	/*position:absolute;*/
+	/*top :0;*/
+	/*left : 0;*/
+	/*width : 100%;*/
+	/*height : 25%;*/
+	/*top : 0;*/
+	/*display: inline-block;*/
+	/*z-index: 8;*/
+	/*background :#C02942;*/
+	-webkit-transform :translate3d(0, -60px , 0);
+	/*-webkit-transition :1.3s ease-out;*/
+
+}
+#wrap2{
+   -webkit-transform : translate3d(0, -30px,0);
+   -webkit-transition : 1.1s ease-out;
+
+	/*position:absolute;*/
+	/*z-index :12;*/
+	/*height :100%;*/
+	/*width :100%;*/
+	/*background-color :#9E9797;*/
+}
+#wrap2.animate{
+
+	position:absolute;
+	z-index :12;
+	top : 100px;
+	left : 300px;
+	right : 300px;
+	height :60%;
+	width :60%;
+	background-color :#9E9797;
+	-webkit-transform : translate3d(0,0,0);
+}
+
+@-webkit-keyframes bounce-in {
+	0% {
+		-webkit-transform : translate3d(0,-60px,0);
+	}
+	50% {
+		-webkit-transform : translate3d(0,10px,0);
+	}
+	100% {
+		-webkit-transform : translate3d(0,0,0);
+	}
+}
+
+#menu.animate {
+	position:absolute;
+	z-index: 8;
+	background :#036564;
+	top :0;
+	left : 0;
+	width : 100%;
+	padding: 10px 0px;
+	/*height : 13%;*/
+	-webkit-animation : bounce-in 0.4s ease-out;
+	-webkit-animation-fill-mode : forwards;
+}
+
